@@ -1,7 +1,7 @@
 # red-ball_tracker
 This application is designed for the raspberry pi using python 3.4.2 on jessie. A webcam is mounted on a pan tilt mount in this case a logitech 920. The application draws an on screen bounding box and screen centre target mostly for calibration purposes. Once a redball is brought into the field of view Open CV will detect the ball, a yellow circle is drawn indicating the target has been acquried with a centroid dot in the middle. Servo motor position numbers are displayed on screen for x,y and the motors will centre on the red ball target. As the ball is moved around the motors will track the ball motion. Once the target is lost the servo motors will stop. The bounding box is an area where the motors typically will cease operation since the object is fairly well centred and should not require continious hunting. Once the ball leaves the bounding box area the motors will track the object to keep it within the centre of the web cams field of view and on screen display.
 
-![alt text](https://raw.githubusercontent.com/repoalpha/red-ball_tracker/tracker_screenshot.png
+![alt text](https://raw.githubusercontent.com/repoalpha/red-ball_tracker/tracker_screenshot.png)
 
 # Dependencies
 - open cv version 3.2
